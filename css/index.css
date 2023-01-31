@@ -1,0 +1,42 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --body-padding: 10px;
+}
+
+body {
+  background-image: linear-gradient(to bottom right, #6157FF, #EE49FD);
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.head-box {
+  margin-top: 10vh;
+  height: 20vh;
+}
+.head-box .question {
+  font-size: 36px;
+  color: #fff;
+}
+.head-box input {
+  background-color: transparent;
+  border: none;
+  border-bottom: dashed 2px #fff;
+  height: 10vh;
+  font-size: 48px;
+  width: 80vw;
+  color: #fff;
+  letter-spacing: 3px;
+}/*# sourceMappingURL=index.css.map */
