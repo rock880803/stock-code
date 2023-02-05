@@ -8,8 +8,9 @@ $setting.click(() => {
     console.log(random);
 })
 
+const endpoint = "https://github.com/rock880803/stock-code/blob/main/data.json/code.json"
 $.ajax({
-    url: "https://randomuser.me/api/",
+    url: endpoint,
   }).done(function (data) {
     console.log(data);
     console.log(typeof data); // object
