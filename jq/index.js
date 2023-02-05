@@ -7,3 +7,10 @@ $setting.click(() => {
     var random = Math.floor(Math.random()*10000);
     console.log(random);
 })
+
+$.ajax({
+    url: "https://randomuser.me/api/",
+  }).done(function (data) {
+    console.log(data);
+    console.log(typeof data); // object
+  });
