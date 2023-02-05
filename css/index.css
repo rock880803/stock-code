@@ -9,7 +9,7 @@
 }
 
 body {
-  background-image: linear-gradient(to bottom right, #6157FF, #EE49FD);
+  background-image: linear-gradient(to bottom right, #6157ff, #ee49fd);
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -26,7 +26,7 @@ body {
   margin-top: 10vh;
   height: 20vh;
 }
-.head-box .question {
+.head-box .code-name {
   font-size: 36px;
   color: #fff;
 }
@@ -39,4 +39,69 @@ body {
   width: 80vw;
   color: #fff;
   letter-spacing: 3px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  color: #fff;
+}
+
+.nav-item i {
+  font-size: 24px;
+  cursor: pointer;
+  margin: 8px;
+}
+
+.sub-nav-ls {
+  position: absolute;
+  width: calc(100vw - 16px);
+  padding: 8px;
+  margin: 8px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 15px 2px rgba(0, 0, 0, 0.1647058824);
+  border-radius: 8px;
+  transform: translateX(-120%);
+  transition: transform 1s, opacity 1s;
+  opacity: 0;
+}
+
+.sub-nav-title {
+  position: relative;
+  z-index: 1;
+  border-bottom: #fff 1px solid;
+  padding: 4px 0 8px;
+}
+
+.sub-nav-item {
+  display: flex;
+  margin: 8px 0;
+  width: 100%;
+  height: 18px;
+}
+.sub-nav-item input {
+  width: 20%;
+  margin: 0 8px;
+}
+
+.setting {
+  transform: rotate(0);
+  transition: all 1s;
+}
+
+.confirm {
+  position: absolute;
+  right: 0;
+  background-color: transparent;
+  border: none;
+  padding: 2px;
+  color: #fff;
+}
+
+.nav-item:hover .setting {
+  transform: rotate(180deg);
+}
+.nav-item:hover .sub-nav-ls {
+  transform: translateX(0);
+  opacity: 1;
 }/*# sourceMappingURL=index.css.map */
